@@ -1,0 +1,212 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-08-08T21:47:00.619Z",
+    "__export_source": "insomnia.desktop.app:v2022.5.0",
+    "resources": [
+        {
+            "_id": "req_5851556f179649dfaceac1d78905ed75",
+            "parentId": "wrk_40e6145fd6c34ad88b2de6b6a04c8385",
+            "modified": 1659993667355,
+            "created": 1659993536651,
+            "url": "{{ _.url }}/categories/import",
+            "name": "Import",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": []
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_4b30e2d4518d4dffa598192c20757911"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1659993536651,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_40e6145fd6c34ad88b2de6b6a04c8385",
+            "parentId": null,
+            "modified": 1659958602755,
+            "created": 1659958602755,
+            "name": "RentalxAPI",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_33b62fd1b2fb440281cd40632a9e605a",
+            "parentId": "fld_ab22e56484c24509905d0b48bc6a2ea3",
+            "modified": 1659993552015,
+            "created": 1659958609596,
+            "url": "{{ _.url }}/categories",
+            "name": "Create category",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"ReactJS\",\n\t\"description\": \"Language\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_9d889cabd80e49d58e0281ba6d193d57"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1659958609596,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_ab22e56484c24509905d0b48bc6a2ea3",
+            "parentId": "wrk_40e6145fd6c34ad88b2de6b6a04c8385",
+            "modified": 1659959274905,
+            "created": 1659959274905,
+            "name": "Categories",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1659959274905,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_ed2ae121136740c8927b68e7707eaf07",
+            "parentId": "fld_ab22e56484c24509905d0b48bc6a2ea3",
+            "modified": 1659992363874,
+            "created": 1659960867655,
+            "url": "{{ _.url }}/categories",
+            "name": "List categories",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1659953057200,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_60a1f8a8f6364365b40c911af2b57149",
+            "parentId": "fld_ae23b0f1ba734186b5d608d476c95637",
+            "modified": 1659993508859,
+            "created": 1659965690392,
+            "url": "{{ _.url }}/specifications",
+            "name": "Create specification",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"ReactJS\",\n\t\"description\": \"Language\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_9d889cabd80e49d58e0281ba6d193d57"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1659958609596,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_ae23b0f1ba734186b5d608d476c95637",
+            "parentId": "wrk_40e6145fd6c34ad88b2de6b6a04c8385",
+            "modified": 1659965690388,
+            "created": 1659965690388,
+            "name": "Specifications",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1659953389065,
+            "_type": "request_group"
+        },
+        {
+            "_id": "env_cdffc1d91e3c4fa4a5c39130d55fc107",
+            "parentId": "wrk_40e6145fd6c34ad88b2de6b6a04c8385",
+            "modified": 1659958602756,
+            "created": 1659958602756,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": {},
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1659947095349,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_1fbef18c00cb49cfa51f802bf1f9eee8",
+            "parentId": "wrk_40e6145fd6c34ad88b2de6b6a04c8385",
+            "modified": 1659958602764,
+            "created": 1659958602764,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_f7909537170e4e42b09d1af969409859",
+            "parentId": "wrk_40e6145fd6c34ad88b2de6b6a04c8385",
+            "modified": 1659958602815,
+            "created": 1659958602768,
+            "fileName": "RentalxAPI",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "env_f6bde5bd7014402fba032937bfff0f1a",
+            "parentId": "env_cdffc1d91e3c4fa4a5c39130d55fc107",
+            "modified": 1659958657715,
+            "created": 1659958602757,
+            "name": "local",
+            "data": {
+                "url": "http://localhost:3000"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "url"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1659947100317,
+            "_type": "environment"
+        }
+    ]
+}
