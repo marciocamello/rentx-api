@@ -21,6 +21,8 @@ class UsersRepository implements IUsersRepository {
             password,
             email,
             driver_license,
+            id,
+            avatar
         } = this.repository.create(data);
 
         await this.repository.save({
@@ -28,6 +30,8 @@ class UsersRepository implements IUsersRepository {
             password,
             email,
             driver_license,
+            id,
+            avatar
         });
     }
 

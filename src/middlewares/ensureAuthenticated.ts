@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { verify } from "jsonwebtoken";
-import { AppError } from "../errors/AppError";
 
+import { AppError } from "../errors/AppError";
 import { UsersRepository } from "../modules/accounts/repositories/implementations/UsersRepository";
 
 interface IPayload {
@@ -26,6 +26,10 @@ export async function ensureAuthenticated(request: Request, response: Response, 
 
         if (!user) {
             throw new AppError("User not found", 401);
+        }
+
+        request.user = {
+            id: user_id,
         }
 
         next();
