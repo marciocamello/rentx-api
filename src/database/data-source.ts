@@ -12,7 +12,8 @@ const AppDataSource = new DataSource({
     migrationsTableName: "migrations",
     migrations: ["./src/database/migrations/**/*{.ts,.js}"],
     entities: [
-        "./src/modules/cars/entities/**/*.ts"
+        "./src/modules/cars/entities/**/*.ts",
+        "./src/modules/accounts/entities/**/*.ts",
     ],
 });
 
