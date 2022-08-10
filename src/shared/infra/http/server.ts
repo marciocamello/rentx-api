@@ -2,13 +2,15 @@ import express, { NextFunction, Request, Response } from 'express';
 import "express-async-errors";
 import swaggerUi from 'swagger-ui-express';
 
-import { createConnection } from './database/data-source';
+import { createConnection } from '@shared/infra/typeorm/data-source';
 
-import "./shared/container";
+import "@shared/container";
+
+import { AppError } from '@shared/errors/AppError';
 
 import { router } from './routes';
-import swaggerFile from './swagger.json';
-import { AppError } from '@errors/AppError';
+
+import swaggerFile from '../../../swagger.json';
 
 const app = express();
 
@@ -41,3 +43,7 @@ app.use((err: Error, _: Request, response: Response, next: NextFunction) => {
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+
+(async () => {
+    return app;
+})();

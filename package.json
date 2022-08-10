@@ -4,8 +4,8 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "dev": "ts-node-dev -r tsconfig-paths/register --inspect --respawn --ignore-watch node_modules --transpile-only ./src/server.ts",
-        "typeorm": "typeorm-ts-node-commonjs -d ./src/database/data-source.ts -r tsconfig-paths/register",
+        "dev": "ts-node-dev -r tsconfig-paths/register --inspect --respawn --ignore-watch node_modules --transpile-only ./src/index.ts",
+        "typeorm": "typeorm-ts-node-commonjs -d ./src/shared/infra/typeorm/data-source.ts -r tsconfig-paths/register",
         "test": "jest"
     },
     "dependencies": {
